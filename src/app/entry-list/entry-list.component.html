@@ -1,0 +1,16 @@
+<div id="entry-list" class="container">
+    <h2 id="ref" >My tasks</h2>
+        <ul>
+            <div #mylist class="task-container" *ngFor="let task of tasks; let ref = index">
+                <li class="left" [ngClass]="{'completed':task.complete}">  {{task.description}}</li>
+                <li class="right" [ngClass]="{'completed':task.complete}">
+                    {{task.folder}}
+                    <a (click)="addNewItem(task)" class="edit-task">Edit</a>
+                    <a (click)="deleteTask(task.id)" class="delete-task">Delete</a>
+                    <a (click)="markAsCompleted(task.id, task)" class="asCompleted">Mark as completed</a>
+                </li>
+            </div>
+        </ul>
+</div>
+
+

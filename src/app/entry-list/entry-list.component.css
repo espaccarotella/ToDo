@@ -1,0 +1,51 @@
+.container{
+    width: 600px;
+    padding: 20px;
+}
+
+ul{
+    padding-left: 0px;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.task-container{
+    display: flex;
+}
+
+.left-id{
+    display: block;
+    width: 30px;
+}
+
+.right{
+    margin-left: auto;
+}
+
+li a{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.edit-task{
+    margin-left: 15px;
+    background-color: coral;
+}
+
+.delete-task{
+    margin-left: 15px;
+    background-color: red;
+}
+
+.asCompleted{
+    margin-left: 15px;
+    background-color: darkgreen;
+}
+
+.completed{
+    color: darkgreen;
+    background-color: yellow;
+}

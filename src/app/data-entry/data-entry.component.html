@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Task Create</h2>
+    <form #taskForm="ngForm" (ngSubmit)="onSubmit(taskForm)">
+        <p>
+            <label for="description">Description</label>
+            <input type="text" name="description" #description="ngModel" [(ngModel)]="new_task.description" required>
+            <span class="form_error" *ngIf="description.touched && !description.valid">Required field</span>
+        </p>
+        <p>
+            <label for="folder">Folder</label>
+            <input type="text" name="folder" #folder="ngModel" [(ngModel)]="new_task.folder" required>
+            <span class="form_error" *ngIf="folder.touched && !folder.valid">Required field</span>
+        </p>
+        <input type="submit" value="Save" [disabled]="!taskForm.form.valid">
+    </form>
+</div>
+<hr>

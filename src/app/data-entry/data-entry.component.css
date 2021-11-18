@@ -1,0 +1,43 @@
+.container{
+    padding: 20px;
+}
+
+form{
+    width: 600px;
+}
+
+form label{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"]{
+    width: 75%;
+    padding: 5px;
+}
+
+form input[type="submit"]{
+    width: 20%;
+    display: block;
+    padding: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background-color: blue;
+}
+
+form input[disabled]{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.form_error{
+    width: 25%;
+    padding: 5px;
+    font-size: 13px;
+    color: red;
+}
